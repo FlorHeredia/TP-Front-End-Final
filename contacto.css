@@ -157,9 +157,12 @@ a {
   min-height: 15%;
 }
 .form p{
-  color: #ccdbdc;
+  text-align: center;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 500;
+  background-color: #414141;
+
 }
 
 .btn-enviar{

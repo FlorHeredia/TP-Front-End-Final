@@ -6,12 +6,12 @@ let comentario= document.getElementById("comentario");
 let btnEnviar = document.getElementById("enviar");
 let informacion = [];
 
-btnEnviar.addEventListener("click", (e) => {
+btnEnviar.addEventListener("submit", (e) => {
     e.preventDefault(); // previene la accion del form de actualizar la pagina
 
 
     if (!nombre.value || !email.value) {
-        alert('Por favor, complete los campos obligatorios'); //esto es lo que mando Mili
+        alert('Por favor, complete los campos obligatorios'); 
         return;
     }
 

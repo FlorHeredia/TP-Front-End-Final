@@ -44,20 +44,20 @@
     <div class="contactoCliente">
         <h1 class="h1">Formulario de contacto</h1>
         <div class="form">
-            <form>
+            <form id="enviar">
                 <label for="nombre"></label>
                 <input class="campo" type="text"  placeholder="Ingresa tu nombre" id="nombre" onkeydown="return /[a-zA-Z]/i.test(event.key)" required>
                 <label for="apellido"></label>
-                <input class="campo" type="text" pattern= "[a-zA-Z+]" required placeholder="Ingresa tu apellido"  id="apellido">
+                <input class="campo" type="text"  placeholder="Ingresa tu apellido"  id="apellido" onkeydown="return /[a-zA-Z]/i.test(event.key)" required>
                 <label for="telefono"></label>
                 <input class="campo" type="number" pattern="[0-9]{10}" placeholder="Ingresa tu teléfono" id="telefono">
                 <label for="email"></label>
-                <input class="campo" type="text" placeholder="Ingresa tu dirección de email"  id="email">
-                <p>Nos gustaria saber como fue tu experiencia de compra:</p>
-                <textarea  name="Comentario" placeholder="Ingresa tu comentario" id="comentario"></textarea>
+                <input class="campo" type="email" required placeholder="Ingresa tu dirección de email"  id="email">
+                <p></p>
+                <textarea  name="Comentario" placeholder="Nos gustaria saber como fue tu experiencia de compra, dejanos tu comentario:" id="comentario"></textarea>
 
 
-                <button class="btn-enviar" id="enviar">Enviar</button>
+                <input type="submit" class="btn-enviar"  value="Enviar">
             </form>
         </div>
 
